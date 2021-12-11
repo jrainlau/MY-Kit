@@ -1,5 +1,5 @@
 <template>
   <div>
-    <q-{{ compClassName }} />
+    <my-{{ compClassName }} />
   </div>
 </template>

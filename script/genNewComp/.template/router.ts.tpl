@@ -8,7 +8,7 @@
 
  import { createRouter, createWebHashHistory, RouterOptions } from 'vue-router'
 
- const routes = {{ routes }};
+ const routes = [{{ routes }}];
  
  const routerConfig = {
    history: createWebHashHistory(),
