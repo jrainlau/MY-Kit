@@ -1,8 +1,8 @@
-const infoSelector = require('./infoSelector')
+const infoCollector = require('./infoCollector')
 const tplReplacer = require('./tplReplacer')
 
 async function run() {
-  const meta = await infoSelector()
+  const meta = await infoCollector()
   tplReplacer(meta)
 }
 
