@@ -34,6 +34,8 @@ body {
     width: 200px;
     padding: 15px;
     border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
   }
   main {
     width: 100%;
