@@ -53,7 +53,7 @@ export default {
           await import(/* @vite-ignore */ `../../packages/${this.compName}/docs/${this.demoName}.vue?raw`)
         ).default;
       } else {
-        this.sourceCode = await fetch(`/packages/${this.compName}/docs/${this.demoName}.vue`).then((res) => res.text());
+        this.sourceCode = await fetch(`${isDev ? '' : '/MY-Kit'}/packages/${this.compName}/docs/${this.demoName}.vue`).then((res) => res.text());
       }
     }
     await this.$nextTick();
